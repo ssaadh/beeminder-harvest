@@ -41,3 +41,28 @@ client_4_time = 0.0
     client_4_time += daily_project_time.hours
   end
 end
+
+
+## Send to Beeminder
+
+# Total
+goal = @bee.goal 'total-time'
+dp = Beeminder::Datapoint.new value: total_time, timestamp: time_to_get
+goal.add dp
+
+# Clients
+#goal = @bee.goal 'client-1-time'
+#dp = Beeminder::Datapoint.new :value => client_1_time, :timestamp => time_to_get
+#goal.add dp
+
+#goal = @bee.goal 'client-2-time'
+#dp = Beeminder::Datapoint.new :value => client_2_time, :timestamp => time_to_get
+#goal.add dp
+
+#goal = @bee.goal 'client-3-time'
+#dp = Beeminder::Datapoint.new :value => client_3_time, :timestamp => time_to_get
+#goal.add dp
+
+#goal = @bee.goal 'client-4-time'
+#dp = Beeminder::Datapoint.new :value => client_4_time, :timestamp => time_to_get
+#goal.add dp
