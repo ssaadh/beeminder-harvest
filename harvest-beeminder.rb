@@ -7,7 +7,8 @@ date = yesterday
 harvest_clients = file_contents( './harvest.txt' )
 beeminder_goals = file_contents( './beeminder.txt' )
 
-update_beeminder_goal( beeminder_goals[ 0 ], total_time, date )
+total = total_time( date )
+update_beeminder_goal( beeminder_goals[ 0 ], total, date )
 beeminder_goals.shift
 
 for i in 0..harvest_clients.count
