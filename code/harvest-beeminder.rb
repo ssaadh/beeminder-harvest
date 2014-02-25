@@ -4,8 +4,8 @@ require_relative 'harvest'
 
 date = yesterday
 
-harvest_clients = file_contents( './harvest.txt' )
-beeminder_goals = file_contents( './beeminder.txt' )
+harvest_clients = file_contents( './data/harvest.txt' )
+beeminder_goals = file_contents( './data/beeminder.txt' )
 
 total = total_time( date )
 update_beeminder_goal( beeminder_goals[ 0 ], total, date )
