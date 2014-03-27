@@ -1,5 +1,6 @@
 # Own code to push Harvest to Beeminder
 
+require_relative 'beeminder'
 require_relative 'harvest'
 
 date = yesterday
