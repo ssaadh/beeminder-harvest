@@ -1,3 +1,5 @@
-total-time-goal-name
+all-total-time-goal-name
+own-semi-total-time-goal-name
 client-1-time-goal-name
 client-2-time-goal-name
+client-3-time-goal-name

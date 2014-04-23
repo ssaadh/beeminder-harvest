@@ -1,2 +1,4 @@
 Client 1
 Client 2
+Client 3
+Client 4 (not included in the second beeminder "own-total-time-goal-name" goal )
